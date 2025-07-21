@@ -98,6 +98,9 @@ export const Img = styled.img`
   height: 100%;
   max-width: 400px;
   max-height: 400px;
+  aspect-ratio: 1/1; /* Always a square */
+  object-fit: cover;  /* No stretch, nicely fills frame */
+  object-position: center 10%;  
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.primary};
 
